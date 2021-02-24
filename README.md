@@ -9,8 +9,12 @@
 5. rails db:create db:migrate db:seed
    * might need to drop your database if you have a database with the same name (rails db:drop)
 7. rails server
-8. go to localhost:3000x
+8. go to localhost:3000
 
 
 # James Changes Here
 yoyoyo
+
+
+# other persons changes
+yadaydyayay
