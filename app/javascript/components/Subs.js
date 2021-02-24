@@ -7,8 +7,9 @@ export default (props) => {
   const renderSubs = () => {
    return subs.map(sub => {
        return(
-           <div>
+           <div className='sub-container'>
                <h1>{sub.name}</h1>
+               <a href={`/subs/${sub.id}`}>show</a>
            </div>
        )
    })
@@ -16,7 +17,9 @@ export default (props) => {
   return (
       <>
         <h1>Subs Here</h1>
+        <div className='subs-container'>
         {renderSubs()}
+        </div>
       </>
   )
 }
