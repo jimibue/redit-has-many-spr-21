@@ -7,19 +7,20 @@ const Sub = (props) => {
     const renderTopics = () => {
         return topics.map(topic => {
             return(
-             <div className='sub-container'>
+             <div className='sub-container' style={{backgroundColor:"#fcfcfc"}}>
                 <h3>{topic.name}</h3>
                 <p>{topic.body}</p>
-                <p>sub_id: {topic.sub_id} should = {id}</p>
+                <a href={`/subs/${topic.sub_id}/topics/${topic.id}`}>show</a>
              </div>
             )
         })
     }
     return(
         <div className='subs-container'>
+            <h1>Sub Show Page Sub ID: {id} </h1>
             <a href='/'>back to subs</a>
             <div className='sub-container'>
-               <h1>{name} (sub id is{id})</h1>
+               <h1>{name}</h1>
                {renderTopics()}
             </div>
         </div>
