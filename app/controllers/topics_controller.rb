@@ -47,13 +47,15 @@ class TopicsController < ApplicationController
       # no validation do not need if else 
       @topic.update(topic_params)
       redirect_to  sub_topic_path(@sub, @topic)
-  
-      
-
     end
 
     def we
      render json: {we: params[:we]}
+    end
+
+    def destroy
+      @topic.destroy
+      redirect_to sub_path(@sub)
     end
 
     private

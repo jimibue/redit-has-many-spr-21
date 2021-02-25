@@ -12,7 +12,7 @@ const Sub = (props) => {
                 <p>{topic.body}</p>
                 <a href={`/subs/${topic.sub_id}/topics/${topic.id}`}>show</a>
                 <a href={`/subs/${topic.sub_id}/topics/${topic.id}/edit`}>edit</a>
-
+                <a href={`/subs/${topic.sub_id}/topics/${topic.id}`} data-method='delete'>delete</a>
              </div>
             )
         })
