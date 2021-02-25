@@ -6,7 +6,8 @@ Rails.application.routes.draw do
     resources :topics
   end
 
-
+  # custome route
+  get 'x/:we/:sub_id', to: "topics#we", as: "yo"
 
 
   # get '/subs', to "subs#index"

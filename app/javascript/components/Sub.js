@@ -19,6 +19,8 @@ const Sub = (props) => {
         <div className='subs-container'>
             <h1>Sub Show Page Sub ID: {id} </h1>
             <a href='/'>back to subs</a>
+            {/* GET	/subs/:sub_id/topics/new */}
+            <a href={`/subs/${sub.id}/topics/new `}>new topic form</a>
             <div className='sub-container'>
                <h1>{name}</h1>
                {renderTopics()}
