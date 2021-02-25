@@ -11,6 +11,8 @@ const Sub = (props) => {
                 <h3>{topic.name}</h3>
                 <p>{topic.body}</p>
                 <a href={`/subs/${topic.sub_id}/topics/${topic.id}`}>show</a>
+                <a href={`/subs/${topic.sub_id}/topics/${topic.id}/edit`}>edit</a>
+
              </div>
             )
         })
